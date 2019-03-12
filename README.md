@@ -1,8 +1,6 @@
 # ngx-pager
 
 A pagination plugins for angular 2. it also supports the higher version.
-
-
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/BinsSoft/ngx-pager) [![Support](https://img.shields.io/badge/Support-Angular%202%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%204%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%205%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%206%2B-blue.svg?style=flat-square)]() [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)]()
 
 ### Install
@@ -71,8 +69,11 @@ Add **ngx-pager** html tag in your component html. For example : **app.component
 |`redirect.param.path`|  if **redirect.type**=`p` name of the url. for example: **redirect.param.path**='./home' |    |    `yes`(only **redirect.type**=`p`)|
 | `redirect.param.name` |  if **redirect.type**=`p` name of the url params which content the page no. for example: http://current-url/{page}/{slug_1}/{slug_2}. **redirect.param.name**='page' |    |    `yes`(only **redirect.type**=`p`)|
 | `redirect.param.params` |  if **redirect.type**=`p` all url params list. it's object type data. For example: **redirect.param.params** = `{ "page":null, "slug_1":"cont-1", "slug_2":"cont-2" }` |    |    `yes`(only **redirect.type**=`p`)|
-| `customContent`|  to change the `prev`,`next`,`first`,`last` button html |  `{"prev":"&#10094;","next":"&#x276F;","first":"&#10094;&#10094;","last":"&#x276F;&#x276F;"}`  |    |
+| `customContent`|  to change the `prev`,`next`,`first`,`last` button html |  `{"prev":"&#10094;", "next":"&#x276F;", "first":"&#10094; &#10094;", "last":"&#x276F; &#x276F;"}`  |    |
+| `render`|  event to rendering the list with paginnation |    |   `yes` |
 
+## Demo
+[Click Here](https://stackblitz.com/edit/ngx-pager) for the demo
 ## Creator
 
 #### [Tonmoy Nandy](tonmoy.nandy@gmail.com)
@@ -81,11 +82,3 @@ Add **ngx-pager** html tag in your component html. For example : **app.component
 ## License
 
 #### The MIT License (MIT)
-
-
-
-
-
-
-
-

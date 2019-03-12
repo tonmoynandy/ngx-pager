@@ -9,83 +9,83 @@ export class HomeComponent implements OnInit {
   dataList:any = [
     {
       id : 1,
-      name : "Tonmoy Nandy"
+      name : "Carla Houston"
     },
     {
       id : 2,
-      name : "Suvojit Seal"
+      name : "Kaitlyn Kristy"
     },
     {
       id : 3,
-      name : "Puspendu Mondal"
+      name : "Sally Selcen Stochliya"
     },
     {
       id : 4,
-      name : "Subham Sarkar"
+      name : "Abigail Akon Obro"
     },
     {
       id : 5,
-      name : "Rajiv Ranjan"
+      name : "Candice Cromwell"
     },
     {
       id : 6,
-      name : "Subhro Sankar"
+      name : "Samantha Smith"
     },
     {
       id : 7,
-      name : "Koushik Mondal"
+      name : "Claire Divas"
     },
     {
       id : 8,
-      name : "Ankur Dey"
+      name : "Ashley Rosa"
     },
     {
       id : 9,
-      name : "Sonali Nandi"
+      name : "Jillian Wyatt"
     },
     {
       id : 10,
-      name : "Biplob"
+      name : "Natosha Jacobs"
     },
     {
       id : 11,
-      name : "Amit Kumar"
+      name : "Elizbeth Smith"
     },
     {
       id : 12,
-      name : "Ayan Ghosh"
+      name : "Priscilla Alexis Canales"
     },
     {
       id : 13,
-      name : "Rahul Roy"
+      name : "Crystal Waston"
     },
     {
       id : 14,
-      name : "Shamik Roy"
+      name : "Janet Chua"
     },
     {
       id : 15,
-      name : "Kingshuk Biswas"
+      name : "Penny Albritton"
     },
     {
       id : 16,
-      name : "Rituraj paul"
+      name : "Jimena Canavesi"
     },
     {
       id : 17,
-      name : "Rajkumar Nandi"
+      name : "Emma Megan"
     },
     {
       id : 18,
-      name : "Rajarsi"
+      name : "Lisa Resnick"
     },
     {
       id : 19,
-      name : "Mirtunjoy "
+      name : "Brittany Jones"
     },
     {
       id : 20,
-      name : "Shreya Mandal"
+      name : "Emma Emily"
     }
   ];
   result :any = [];
