@@ -1,0 +1,14 @@
+
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+  </tr>
+  <tr *ngFor="let n of result">
+    <td>{{ n.id }}</td>
+    <td>{{ n.name }}</td>
+  </tr>
+</table>
+
+<ngx-pager [config]="pagerConfig" [totalrow]='totalRow' ></ngx-pager>
