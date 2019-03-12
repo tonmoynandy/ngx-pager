@@ -1,0 +1,29 @@
+.ngx-pager-container{ text-align: center; padding: 25px 0 0 0;
+    li{ display: inline-block; margin: 0 4px;
+      a{ display: block; width: 26px; height: 26px; border: 1px solid #707070; text-align: center; color: #3E4E59; font-size: 14px; line-height: 24px; border-radius: 5px;
+        text-decoration: none;
+        &:hover{ color: #FFF; 
+          background: #0a0e03;
+        }
+      }
+    }
+
+    li.disabled{
+        pointer-events: none;
+        cursor: not-allowed;
+        a{
+          color: #cacaca;
+        }
+    }
+    li.invisible {
+      display: none;
+    }
+    li.active{
+      background: #0a0e03;
+      border-radius: 5px;
+      a{
+        border: none;
+        color: #FFF;
+      }
+    }
+  }

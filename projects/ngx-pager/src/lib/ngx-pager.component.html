@@ -1,0 +1,15 @@
+<div class="ngx-pager-container" *ngIf="!error">
+<ul *ngIf="pages">
+    <li class="arrow first" [class.disabled]="currentPage==1" *ngIf="firstLastView && !simple"><a  href="javascript:void(0)" (click)="pageClick($event, 1)" [innerHTML]="customContent.first"></a></li>
+    
+    <li class="arrow prev" [class.disabled]="currentPage==1"><a  href="javascript:void(0)" (click)="pageClick($event, (currentPage-1))" [innerHTML]="customContent.prev"></a></li>
+    
+    <li *ngFor="let p of pages" [class.active]="currentPage==p" [class.invisible]="simple">
+    <a  href="javascript:void(0)" (click)="pageClick($event, p)">{{ p }}</a>
+    </li>
+    
+    <li class="arrow next" [class.disabled]="currentPage==totalPage"><a  href="javascript:void(0)" (click)="pageClick($event, currentPage+1)" [innerHTML]="customContent.next"></a></li>
+    
+    <li class="arrow last" [class.disabled]="currentPage==totalPage" *ngIf="firstLastView && !simple"><a  href="javascript:void(0)" (click)="pageClick($event, totalPage)" [innerHTML]="customContent.last"></a></li>
+</ul>
+</div>
