@@ -1,6 +1,11 @@
 {
   "name": "ngx-pager",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "license" : "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonmoynandy/ngx-pager.git"
+  },
   "peerDependencies": {
     "@angular/common": "^7.1.0",
     "@angular/core": "^7.1.0"
