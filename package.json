@@ -1,6 +1,7 @@
 {
   "name": "angular-pagination-library",
   "version": "0.0.0",
+  "keywords":["angular","angular2","angular4","angular6","angular7","ng","ngx","pagination","ngx-pager","typescript"],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
