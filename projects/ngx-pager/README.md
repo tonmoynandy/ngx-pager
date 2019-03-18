@@ -1,9 +1,7 @@
 # ngx-pager
 
 A pagination plugins for angular 2. it also supports the higher version.
-
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/BinsSoft/ngx-pager) [![Support](https://img.shields.io/badge/Support-Angular%202%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%204%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%205%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%206%2B-blue.svg?style=flat-square)]() [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)]()
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/BinsSoft/ngx-pager) [![Support](https://img.shields.io/badge/Support-Angular%202%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%204%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%205%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%206%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%207%2B-blue.svg?style=flat-square)]() [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)]()
 
 ### Install
 
@@ -22,32 +20,60 @@ import "**NgxPagerModule**" in your application module. For example: **app.modul
     })
     export  class  AppModule { }
 
+add styles in your application stylesheets. For example: **styles.scss**
+
+    @import  "~ngx-pager/themes/ngx-pager";
+
 add configration in your component. For example : **app.component.ts**
 
 	import {HttpClient} from  '@angular/common/http';
 	
     export  class  AppComponent  implements  OnInit {
-	    pagerConfig: any = null;
-	    totalRow: any = null;
-	    result: Array<any> = [];
-	    
-	    constructor(private  http:  HttpClient){}
-	    
-	    ngOnInit() {
-		    this.pagerConfig  = {
-			    perPage:3,
-				displayPageCount:  3,
-				firstLastView:true,
-				render: (page)=> {
-					this.http.get('<API URL>')
-					.subscribe((responseData:any)=>{
-						this.totalRow = responseData.totalRows;
-						this.result = responseData.list;
-					})
-				}
-			};
-	    }
-	}
+    pagerConfig: any = null;
+    totalRow: any = null;
+    result: Array<any> = [];
+    
+    constructor(private  http:  HttpClient){}
+    ngOnInit() {
+	   this.pagerConfig  = {
+		    perPage:3,
+			displayPageCount:  3,
+			firstLastView:true,
+			    render: (page)=> {
+   					this.http.get('<API URL>')
+   					.subscribe((responseData:any)=>{
+   						this.totalRow = responseData.totalRows;
+   						this.result = responseData.list;
+   					})
+   				}
+   			};
+   	    }
+   	}
+
+				
+If want to change the url with query string after every page change, append **redirect** parameter with config.For example: url like http://localhost:4200/home?page=1
+
+	redirect : {
+	  type :'q', // q=query string
+	  param : 'page'// param name
+	},
+
+If want to change the url with url parames after every page change, append **redirect** parameter with config. For example: url like http://localhost:4200/home/flag-one/1/flag-two
+
+    redirect: {
+		type :  'p',
+		param: {
+			path :  './home',
+			name :  'page',
+			params: {
+			    flagOne: 'flag-one',
+				page:  null,
+				flagTwo: 'flag-two'
+			}
+	   }
+	},
+
+
 
 Add **ngx-pager** html tag in your component html. For example : **app.component.html**
 

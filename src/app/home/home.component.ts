@@ -103,20 +103,20 @@ export class HomeComponent implements OnInit {
       displayPageCount: 3,
       simple:false,
       firstLastView:true,
-      redirect: {
-        // type :'q', // q=query string / p= params,
-        // param : 'page'// param name  
+      // redirect: {
+      //   // type :'q', // q=query string 
+      //   // param : 'page'// param name  
 
-        type : 'p',
-        param: {
-          path : './home',
-          name : 'page',
-          params: {
-            page: null
-          }
-        }
+      //   type : 'p', // p= params,
+      //   param: {
+      //     path : './home',
+      //     name : 'page',
+      //     params: {
+      //       page: null
+      //     }
+      //   }
         
-      },
+      // },
       render: (page)=> {
         this.result = this.dataList.slice( (page-1)*this.pagerConfig.perPage,  (page-1)*this.pagerConfig.perPage+this.pagerConfig.perPage);
         this.totalRow = this.dataList.length;

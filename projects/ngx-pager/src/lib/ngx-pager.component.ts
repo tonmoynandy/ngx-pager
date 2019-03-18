@@ -45,7 +45,7 @@ export class NgxPagerComponent implements OnChanges {
 	*/
   ngOnInit() {
     
-    if (localStorage.getItem('_nxp') && !this.config.redirect) {
+    if (localStorage.getItem('_nxp') && this.config && !this.config.redirect) {
           
       let localUrl = localStorage.getItem('_nxp');
       let localUrlArr = localUrl.split(":");
@@ -54,11 +54,11 @@ export class NgxPagerComponent implements OnChanges {
       }
       this.rendering();
     } 
-    else if (!localStorage.getItem('_nxp') && !this.config.redirect) {
+    else if (!localStorage.getItem('_nxp') && this.config && !this.config.redirect) {
       localStorage.setItem('_nxp', this.route.url+':'+this.currentPage);
       this.rendering();
     }
-    else if(this.config.redirect){
+    else if(this.config && this.config.redirect){
       localStorage.removeItem("_nxp");
       if (!this.config.redirect.type) {
         console.error("'type' parameter must be set with 'redirect' parameter");
