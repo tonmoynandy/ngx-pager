@@ -1,6 +1,6 @@
 {
   "name": "ngx-pager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license" : "MIT",
   "keywords":["angular","angular2","angular4","angular6","angular7","ng","ngx","pagination","ngx-pager","typescript"],
   "repository": {

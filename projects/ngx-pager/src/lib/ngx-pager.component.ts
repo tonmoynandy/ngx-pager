@@ -58,6 +58,9 @@ export class NgxPagerComponent implements OnChanges {
       localStorage.setItem('_nxp', this.route.url+':'+this.currentPage);
       this.rendering();
     }
+    else if (this.totalrow || this.totalrow == 0) {
+        this.error = true;
+    }
     else if(this.config && this.config.redirect){
       localStorage.removeItem("_nxp");
       if (!this.config.redirect.type) {
@@ -87,11 +90,13 @@ export class NgxPagerComponent implements OnChanges {
             this.rendering();
           })
       }
-    }
+    } 
   }
 
   ngOnChanges(changes:SimpleChanges) {
+
     if (changes.totalrow && this.totalrow)  {
+      
       this.settings();
     }
   }
@@ -165,7 +170,6 @@ export class NgxPagerComponent implements OnChanges {
 	*/
   pageClick(event, pageNo) {
     this.currentPage = pageNo;
-    // console.log(this.currentPage);
     this.redefinePager();
     if (!this.config.redirect) {
       localStorage.setItem('_nxp', this.route.url+':'+this.currentPage);

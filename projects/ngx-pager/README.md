@@ -1,9 +1,26 @@
 # ngx-pager
 
-A pagination plugins for angular 2. it also supports the higher version.
+A pagination plugins for **Angular**.
+
+
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/BinsSoft/ngx-pager) [![Support](https://img.shields.io/badge/Support-Angular%202%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%204%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%205%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%206%2B-blue.svg?style=flat-square)]() [![Support](https://img.shields.io/badge/Support-Angular%207%2B-blue.svg?style=flat-square)]() [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)]()
 
-### Install
+> Please support this project by simply putting a Github star. Share this library with friends on Twitter and everywhere else you can.
+
+## Table of contents:
+
+ 
+ - Getting started
+   - [Installation](#installation)
+   - [Implementation](#implementation)
+   - [Settings Option](#settings-option)
+- [Demo](#demo)
+ - [Creators](#creator)
+ - [License](#license)
+
+##  Getting started 
+
+### Installation
 
 > npm install ngx-pager --save
 
@@ -102,6 +119,7 @@ Add **ngx-pager** html tag in your component html. For example : **app.component
 
 ## Demo
 [Click Here](https://stackblitz.com/edit/ngx-pager) for the demo
+
 ## Creator
 
 #### [Tonmoy Nandy](tonmoy.nandy@gmail.com)

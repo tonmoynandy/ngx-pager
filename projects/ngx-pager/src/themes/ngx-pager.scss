@@ -8,13 +8,7 @@
       }
     }
 
-    li.disabled{
-        pointer-events: none;
-        cursor: not-allowed;
-        a{
-          color: #cacaca;
-        }
-    }
+
     li.invisible {
       display: none;
     }

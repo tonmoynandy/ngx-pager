@@ -1,0 +1,9 @@
+.ngx-pager-container {
+  li.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    a {
+      color: #cacaca;
+    }
+  }
+}
